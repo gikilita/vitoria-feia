@@ -1,6 +1,11 @@
 <span>
 .cabeçalho{
     background-color: var(--branco);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    Position: relative;
+}
 .container__imagem {
     padding: lem;
     display: flex;
@@ -12,4 +17,12 @@
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
-    }
+}
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.container__botao:checked ~ .lista-menu {
+     display: block;
+}
