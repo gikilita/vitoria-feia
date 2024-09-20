@@ -59,6 +59,8 @@ estante o que precisa para seu desenvolvimento!</p>
             <!-- Slider main container --><div class=”swiper”>
 <div class=”swiper”>
    <!-- Additional required wrapper -->
+   <!-- If we need pagination -->
+   <div class=”swiper-pagination”></div>
    <div class=”swiper-wrapper”>
    <!-- Slides -->
     <div class=”swiper-slide”><img src=”img/ApacheKafkasvg”
@@ -74,14 +76,23 @@ alt=”Livro sobre Portugol da AluraBooks”></div>
    <!-- If we need navigation buttons -->
    <div class=”swiper-button-prev”></div>
    <div class=”swiper-button-next”></div>
-   <!-- If we need scrollbar -->
-   <div class=”swiper-scrollbar”></div>
    </div>
    </section> 
-
-
-
              <script src=”https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js”></
  script>
-     </body>
+ 
+  <script src=”https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.
+js”></script>
+  <script>
+      const swiper = new Swiper(‘.swiper’, {
+           speed: 400,
+          spaceBetween: 10,
+          slidesPerView: 3,
+          pagination: {
+              el: ‘.swiper-pagination’,
+              type: ‘bullets’,
+         },
+      });
+   </script>
+      </body>
  </html>
